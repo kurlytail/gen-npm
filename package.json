@@ -1,7 +1,7 @@
 {
-    "name": "@kurlytail/pmgr-web",
-    "description": "PMGR web interface",
-    "version": "0.0.8",
+    "name": "@kurlytail/gen-npm",
+    "description": "NPM project generator",
+    "version": "0.0.2",
     "main": "dist/app.min.js",
     "devDependencies": {
         "babel-cli": "^6.26.0",
