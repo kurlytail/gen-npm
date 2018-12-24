@@ -1,0 +1,3 @@
+[submodule "jenkins-lib"]
+	path = jenkins-lib
+	url = https://github.com/kurlytail/jenkins-lib
