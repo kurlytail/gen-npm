@@ -35,15 +35,6 @@ pipeline {
                     sh 'npm install'
                     sh 'npm version $NPM_VERSION_NUMBER'
                     sh 'npm run lint'
-                    publishHTML target: [
-                        allowMissing: false,
-                        alwaysLinkToLastBuild: false,
-                        keepAll: true,
-                        reportDir: 'coverage',
-                        reportFiles: 'index.html',
-                        reportName: 'Coverage Report'
-                    ]
-                    junit 'test-report.xml'
                     sh 'npm run build'
                     sh 'npm publish'
                 }
