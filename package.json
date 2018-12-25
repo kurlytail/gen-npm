@@ -4,7 +4,7 @@
     "version": "0.0.2",
     "main": "dist/app.min.js",
     "devDependencies": {
-        "@kurlytail/gen-lib": "0.0.2",
+        "@kurlytail/gen-lib": "^0.0.2",
         "babel-cli": "^6.26.0",
         "babel-core": "^6.26.0",
         "babel-eslint": "^8.0.1",
