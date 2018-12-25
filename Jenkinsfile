@@ -1,6 +1,10 @@
 pipeline {
     agent none
 
+    triggers {
+        upstream(upstreamProjects: 'kurlytail/gen-lib/master', threshold: hudson.model.Result.SUCCESS)
+    }
+
     parameters {
         string(defaultValue: "0.0", description: 'Build version prefix', name: 'BUILD_VERSION_PREFIX')
         string(defaultValue: "", description: 'Build number offset', name: 'BUILDS_OFFSET')
