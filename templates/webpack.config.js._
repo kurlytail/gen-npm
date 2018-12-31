@@ -15,7 +15,7 @@ const showConfigOnly = '1' === process.env.SHOW_CONFIG_ONLY || 'true' === proces
 
 const config = {
     entry: {
-        app: './src/index.js'
+        app: './src/js/index.js'
     },
 
     output: {

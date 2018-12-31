@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`# integration test ## should generate design 1`] = `
+"info: Generating testoutput/.editorconfig from template templates/.editorconfig._
+info: Generating testoutput/.eslintignore from template templates/.eslintignore._
+info: Generating testoutput/.eslintrc.js from template templates/.eslintrc.js._
+info: Generating testoutput/.gitignore from template templates/.gitignore._
+info: Generating testoutput/.npmignore from template templates/.npmignore._
+info: Generating testoutput/.prettierrc from template templates/.prettierrc._
+info: Generating testoutput/Jenkinsfile from template templates/Jenkinsfile._
+info: Generating testoutput/package.json from template templates/package.json._
+info: Generating testoutput/README.md from template templates/README.md._
+info: Generating testoutput/webpack.config.js from template templates/webpack.config.js._
+info: Generating testoutput/src/js/index.js from template templates/index.js._
+info: Generating testoutput/src/js/__tests__/integration.js from template templates/integration.js._
+"
+`;
+
+exports[`# integration test ## should generate design and run npm commands 1`] = `
+"info: Generating testoutput/.editorconfig from template templates/.editorconfig._
+info: Generating testoutput/.eslintignore from template templates/.eslintignore._
+info: Generating testoutput/.eslintrc.js from template templates/.eslintrc.js._
+info: Generating testoutput/.gitignore from template templates/.gitignore._
+info: Generating testoutput/.npmignore from template templates/.npmignore._
+info: Generating testoutput/.prettierrc from template templates/.prettierrc._
+info: Generating testoutput/Jenkinsfile from template templates/Jenkinsfile._
+info: Generating testoutput/package.json from template templates/package.json._
+info: Generating testoutput/README.md from template templates/README.md._
+info: Generating testoutput/webpack.config.js from template templates/webpack.config.js._
+info: Generating testoutput/src/js/index.js from template templates/index.js._
+info: Generating testoutput/src/js/__tests__/integration.js from template templates/integration.js._
+"
+`;
+
+exports[`# integration test ## should generate design and run npm commands 2`] = `
+"
+> fsevents@1.2.4 install /Users/ashwin/pmgr/gen-npm/testoutput/node_modules/fsevents
+> node install
+
+[fsevents] Success: \\"/Users/ashwin/pmgr/gen-npm/testoutput/node_modules/fsevents/lib/binding/Release/node-v64-darwin-x64/fse.node\\" already installed
+Pass --update-binary to reinstall or --build-from-source to recompile
+
+> uglifyjs-webpack-plugin@0.4.6 postinstall /Users/ashwin/pmgr/gen-npm/testoutput/node_modules/uglifyjs-webpack-plugin
+> node lib/post_install.js
+
+added 1015 packages from 498 contributors and audited 25371 packages in 21.351s
+found 0 vulnerabilities
+
+"
+`;
+
+exports[`# integration test ## should generate design and run npm commands 3`] = `
+"
+> @kurlytail/generated-npm-framework@0.0.1 lint /Users/ashwin/pmgr/gen-npm/testoutput
+> eslint src
+
+"
+`;
+
+exports[`# integration test ## should generate design and run npm commands 4`] = `
+"
+> @kurlytail/generated-npm-framework@0.0.1 test /Users/ashwin/pmgr/gen-npm/testoutput
+> jest tests
+
+jest-haste-map: @providesModule naming collision:
+  Duplicate module name: @kurlytail/generated-npm-framework
+  Paths: /Users/ashwin/pmgr/gen-npm/testoutput/package.json collides with /Users/ashwin/pmgr/gen-npm/testoutput/.generated/package.json
+
+This warning is caused by a @providesModule declaration with the same name across two different files.
+----------|----------|----------|----------|----------|-------------------|
+File      |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
+----------|----------|----------|----------|----------|-------------------|
+All files |  Unknown |  Unknown |  Unknown |  Unknown |                   |
+----------|----------|----------|----------|----------|-------------------|
+"
+`;
+
+exports[`# integration test ## should generate design with merge 1`] = `
+"info: Generating testoutput/.editorconfig from template templates/.editorconfig._
+info: Generating testoutput/.eslintignore from template templates/.eslintignore._
+info: Generating testoutput/.eslintrc.js from template templates/.eslintrc.js._
+info: Generating testoutput/.gitignore from template templates/.gitignore._
+info: Generating testoutput/.npmignore from template templates/.npmignore._
+info: Generating testoutput/.prettierrc from template templates/.prettierrc._
+info: Generating testoutput/Jenkinsfile from template templates/Jenkinsfile._
+info: Generating testoutput/package.json from template templates/package.json._
+info: Generating testoutput/README.md from template templates/README.md._
+info: Generating testoutput/webpack.config.js from template templates/webpack.config.js._
+info: Generating testoutput/src/js/index.js from template templates/index.js._
+info: Generating testoutput/src/js/__tests__/integration.js from template templates/integration.js._
+"
+`;
+
+exports[`# integration test ## should generate design with merge 2`] = `
+"info: Generating testoutput/.editorconfig from template templates/.editorconfig._
+info: Generating testoutput/.eslintignore from template templates/.eslintignore._
+info: Generating testoutput/.eslintrc.js from template templates/.eslintrc.js._
+info: Generating testoutput/.gitignore from template templates/.gitignore._
+info: Generating testoutput/.npmignore from template templates/.npmignore._
+info: Generating testoutput/.prettierrc from template templates/.prettierrc._
+info: Generating testoutput/Jenkinsfile from template templates/Jenkinsfile._
+info: Generating testoutput/package.json from template templates/package.json._
+info: Generating testoutput/README.md from template templates/README.md._
+info: Generating testoutput/webpack.config.js from template templates/webpack.config.js._
+info: Generating testoutput/src/js/index.js from template templates/index.js._
+info: Generating testoutput/src/js/__tests__/integration.js from template templates/integration.js._
+"
+`;
+
+exports[`# integration test ## should print help options 1`] = `
+"Usage:
+  node sgen [OPTION]
+
+Options:
+  -m, --map=ARG+       mapping files
+  -d, --design=ARG+    design files
+  -o, --output=ARG     output directory for generated files
+      --overwrite=ARG  Overwrite modes, can be one of skip, regen, error or merge                         (default: skip)
+      --forceOverwrite Override overwrite flags in the generator map with the one provided on --overwrite
+  -h, --help           display this help
+"
+`;

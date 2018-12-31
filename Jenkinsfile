@@ -39,7 +39,7 @@ pipeline {
                     sh 'npm install'
                     sh 'npm version $NPM_VERSION_NUMBER'
                     sh 'npm run lint'
-                    sh 'npm run build'
+                    sh 'npm run test'
                     sh 'npm publish'
                 }
             }
