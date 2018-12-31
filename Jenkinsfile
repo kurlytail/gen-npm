@@ -40,6 +40,7 @@ pipeline {
                     sh 'npm version $NPM_VERSION_NUMBER'
                     sh 'npm run lint'
                     sh 'npm run test'
+                    junit 'test-report.xml'
                     sh 'npm publish'
                 }
             }
