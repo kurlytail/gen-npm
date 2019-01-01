@@ -1,6 +1,6 @@
 {
-    "name": "@kurlytail/generated-npm-framework",
-    "description": "NPM project generator output",
+    "name": "@kurlytail/<%=design.MasterDesign[0].name%>",
+    "description": "<%=design.MasterDesign[0].name%>",
     "version": "0.0.1",
     "main": "dist/app.min.js",
     "devDependencies": {

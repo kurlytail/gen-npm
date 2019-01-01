@@ -15,7 +15,7 @@ pipeline {
             steps {
                 script {
                     loadLibrary()
-                    env['NPM_VERSION_NUMBER'] = getNpmVersion 'kurlytail/gen-npm/master', params.BUILD_VERSION_PREFIX, params.BUILDS_OFFSET
+                    env['NPM_VERSION_NUMBER'] = getNpmVersion 'kurlytail/<%=design.MasterDesign[0].name%>/master', params.BUILD_VERSION_PREFIX, params.BUILDS_OFFSET
                     currentBuild.displayName = env['NPM_VERSION_NUMBER']
                 }
             }
