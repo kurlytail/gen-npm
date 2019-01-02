@@ -58,7 +58,7 @@
         "child_process": "^1.0.2",
         "eslint-plugin-jest": "^22.1.2"
     },
-    "bin" : {
+    "bin": {
         "sgen-npm": "scripts/sgen-npm.sh"
     }
 }
