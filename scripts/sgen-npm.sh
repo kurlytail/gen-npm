@@ -1,2 +1,16 @@
 #!/usr/bin/env bash
-`npm bin`/sgen -m `dirname $BASH_SOURCE`/../templates/map.json $*
+PRG="$BASH_SOURCE"
+progname=`basename "$BASH_SOURCE"`
+
+while [ -h "$PRG" ] ; do
+    ls=`ls -ld "$PRG"`
+    link=`expr "$ls" : '.*-> \(.*\)$'`
+    if expr "$link" : '/.*' > /dev/null; then
+        PRG="$link"
+    else
+        PRG=`dirname "$PRG"`"/$link"
+    fi
+done
+
+dir=$(dirname "$PRG")
+`npm bin`/sgen -m $dir/../templates/map.json $*
