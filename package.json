@@ -54,7 +54,7 @@
         "clean": "rimraf ./docs ./dist ./coverage test-report.xml"
     },
     "dependencies": {
-        "@kurlytail/gen-lib": "^0.0.32",
+        "@kurlytail/gen-lib": "^0.0.66",
         "child_process": "^1.0.2",
         "eslint-plugin-jest": "^22.1.2"
     },
