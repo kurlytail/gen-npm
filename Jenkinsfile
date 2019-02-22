@@ -1,8 +1,10 @@
+
+
 pipeline {
     agent none
 
     triggers {
-        upstream(upstreamProjects: 'kurlytail/gen-lib/master,kurlytail/gen-sgen/master', threshold: hudson.model.Result.SUCCESS)
+        upstream(upstreamProjects: 'kurlytail/gen-lib/master', threshold: hudson.model.Result.SUCCESS)
     }
 
     parameters {
@@ -44,6 +46,12 @@ pipeline {
                     sh 'npm publish'
                 }
             }
+        }
+    }
+
+    post {
+        always {
+            slackSend message: "gen-npm build ${env.NPM_VERSION_NUMBER} - Status ${currentBuild.result} - ${env.BUILD_URL}"
         }
     }
 }
