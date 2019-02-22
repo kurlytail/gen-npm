@@ -3,6 +3,7 @@
     "description": "NPM project generator",
     "version": "0.0.1",
     "devDependencies": {
+        "@kurlytail/gen-sgen": "0.0.55",
         "babel-cli": "^6.26.0",
         "babel-core": "^6.26.0",
         "babel-eslint": "^8.0.1",
@@ -20,10 +21,10 @@
         "eslint-plugin-babel": "^4.1.2",
         "eslint-plugin-import": "^2.14.0",
         "eslint-plugin-prettier": "^2.3.1",
-        "prettier": "^1.10.2",
         "jest": "^23.6.0",
         "jest-junit-reporter": "^1.1.0",
-        "jsdoc": "^3.5.5"
+        "jsdoc": "^3.5.5",
+        "prettier": "^1.10.2"
     },
     "license": "UNLICENSED",
     "jest": {
