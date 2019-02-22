@@ -11,6 +11,7 @@ info: Generated testoutput/.npmignore from template templates/.npmignore._
 info: Generated testoutput/.prettierrc from template templates/.prettierrc._
 info: Generated testoutput/Jenkinsfile from template templates/Jenkinsfile._
 info: loading extension templates/extensions/package-json-misc._
+info: loading extension templates/extensions/package-json-jest._
 info: loading extension templates/extensions/package-json-babel._
 info: Generated testoutput/package.json from template templates/package.json._
 info: Generated testoutput/README.md from template templates/README.md._
@@ -37,6 +38,7 @@ info: Generated testoutput/.npmignore from template templates/.npmignore._
 info: Generated testoutput/.prettierrc from template templates/.prettierrc._
 info: Generated testoutput/Jenkinsfile from template templates/Jenkinsfile._
 info: loading extension templates/extensions/package-json-misc._
+info: loading extension templates/extensions/package-json-jest._
 info: loading extension templates/extensions/package-json-babel._
 info: Generated testoutput/package.json from template templates/package.json._
 info: Generated testoutput/README.md from template templates/README.md._
@@ -63,6 +65,7 @@ info: Generated testoutput/.npmignore from template templates/.npmignore._
 info: Generated testoutput/.prettierrc from template templates/.prettierrc._
 info: Generated testoutput/Jenkinsfile from template templates/Jenkinsfile._
 info: loading extension templates/extensions/package-json-misc._
+info: loading extension templates/extensions/package-json-jest._
 info: loading extension templates/extensions/package-json-babel._
 info: Generated testoutput/package.json from template templates/package.json._
 info: Generated testoutput/README.md from template templates/README.md._
@@ -92,6 +95,7 @@ info: Generated testoutput/.npmignore from template templates/.npmignore._
 info: Generated testoutput/.prettierrc from template templates/.prettierrc._
 info: Generated testoutput/Jenkinsfile from template templates/Jenkinsfile._
 info: loading extension templates/extensions/package-json-misc._
+info: loading extension templates/extensions/package-json-jest._
 info: loading extension templates/extensions/package-json-babel._
 info: Generated testoutput/package.json from template templates/package.json._
 info: Generated testoutput/README.md from template templates/README.md._

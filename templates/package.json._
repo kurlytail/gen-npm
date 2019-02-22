@@ -16,29 +16,8 @@
         "clean": "rimraf ./docs ./dist ./coverage test-report.xml"
     },
     "license": "UNLICENSED",
-    "jest": {
-        "testResultsProcessor": "./node_modules/jest-junit-reporter",
-        "moduleDirectories": [
-            "node_modules",
-            "./src"
-        ],
-        "testPathIgnorePatterns": [
-            "./.generated"
-        ],
-        "collectCoverage": true,
-        "coverageReporters": [
-            "text",
-            "html"
-        ],
-        "collectCoverageFrom": [
-            "src/**/*.js",
-            "!**/node_modules/**"
-        ],
-        "setupFiles": [
-            "jest-localstorage-mock"
-        ]
-    },
     "dependencies": {
 <%=extension('package-json-.*', 'dependencies').filter(v => v.trim() != '').join(',')%>
-    }
+    },
+<%=extension('package-json-.*').filter(v => v.trim() != '').join(',')%>
 }
