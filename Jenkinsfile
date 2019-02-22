@@ -1,3 +1,5 @@
+
+
 pipeline {
     agent none
 
@@ -44,6 +46,12 @@ pipeline {
                     sh 'npm publish'
                 }
             }
+        }
+    }
+
+    post {
+        always {
+            slackSend message: "gen-npm build ${env.NPM_VERSION_NUMBER} - Status ${currentBuild.result} - ${env.BUILD_URL}"
         }
     }
 }
