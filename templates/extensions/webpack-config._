@@ -1,37 +1,19 @@
-/********* Start gen-npm templates/extensions/webpack-config._ */
+/********* Start gen-npm templates/extensions/webpack-config._ <%=labels.join(',')%> */
 <%if(labels.includes('target')) {%>
 'node'
 <%} else if(labels.includes('module-rules')) {%>
-{
-    test: /\.js$/,
-    enforce: 'pre',
-    use: [
-        'source-map-loader',
-        {
-            loader: 'eslint-loader',
-            options: {
-                emitWarning: true
-            }
-        }
-    ]
-},
 {
     exclude: /node_modules/,
     test: /\.js$/,
     loader: 'babel-loader'
 }
 <%} else if(labels.includes('imports')) {%>
-const CircularDependencyPlugin = require('circular-dependency-plugin');
 const UglifyEsPlugin = require('uglify-es-webpack-plugin');
 <%} else if(labels.includes('plugins')) {%>
-        new CircularDependencyPlugin({
-            exclude: /node_modules/,
-            failOnError: false
-        }),
         new webpack.DefinePlugin({
             'process.env': {
                 NODE_ENV: JSON.stringify(isProd ? 'production' : 'development')
             }
         })
 <%}%>
-/********* End gen-npm templates/extensions/webpack-config._ */
+/********* End gen-npm templates/extensions/webpack-config._ <%=labels.join(',')%> */

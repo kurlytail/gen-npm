@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const webpack = require('webpack');
 const chalk = require('chalk');
-<%=extension('webpack-config.*', 'imports').filter(v => v.trim() != '')%>
+<%=extension('webpack-config.*', 'imports').filter(v => v.trim() != '').join('\n')%>
 
 
 const isProd = process.env.NODE_ENV === 'production';
@@ -33,12 +33,12 @@ const config = {
     },
 
     plugins: [
-<%=extension('webpack-config.*', 'plugins').filter(v => v.trim() != '').join(',')%>
+<%=extension('webpack-config.*', 'plugins').filter(v => v.trim() != '').join('\n,')%>
     ],
 
     module: {
         rules: [
-<%=extension('webpack-config.*', 'module-rules').filter(v => v.trim() != '').join(',')%>
+<%=extension('webpack-config.*', 'module-rules').filter(v => v.trim() != '').join('\n,')%>
         ]
     },
 

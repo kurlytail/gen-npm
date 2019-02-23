@@ -1,0 +1,24 @@
+/********* Start gen-npm templates/extensions/webpack-config-1._ <%=labels.join(',')%> */
+<%if(labels.includes('module-rules')) {%>
+{
+    test: /\.js$/,
+    enforce: 'pre',
+    use: [
+        'source-map-loader',
+        {
+            loader: 'eslint-loader',
+            options: {
+                emitWarning: true
+            }
+        }
+    ]
+}
+<%} else if(labels.includes('imports')) {%>
+const CircularDependencyPlugin = require('circular-dependency-plugin');
+<%} else if(labels.includes('plugins')) {%>
+        new CircularDependencyPlugin({
+            exclude: /node_modules/,
+            failOnError: false
+        })
+<%}%>
+/********* End gen-npm templates/extensions/webpack-config-1._ <%=labels.join(',')%> */
