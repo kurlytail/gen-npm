@@ -15,6 +15,7 @@ info: loading extension templates/extensions/package-json-jest._
 info: loading extension templates/extensions/package-json-babel._
 info: Generated testoutput/package.json from template templates/package.json._
 info: Generated testoutput/README.md from template templates/README.md._
+info: loading extension templates/extensions/webpack-config._
 info: Generated testoutput/webpack.config.js from template templates/webpack.config.js._
 info: Generated testoutput/src/js/index.js from template templates/index.js._
 info: Generated testoutput/src/js/__tests__/integration.js from template templates/integration.js._
@@ -42,6 +43,7 @@ info: loading extension templates/extensions/package-json-jest._
 info: loading extension templates/extensions/package-json-babel._
 info: Generated testoutput/package.json from template templates/package.json._
 info: Generated testoutput/README.md from template templates/README.md._
+info: loading extension templates/extensions/webpack-config._
 info: Generated testoutput/webpack.config.js from template templates/webpack.config.js._
 info: Generated testoutput/src/js/index.js from template templates/index.js._
 info: Generated testoutput/src/js/__tests__/integration.js from template templates/integration.js._
@@ -69,6 +71,7 @@ info: loading extension templates/extensions/package-json-jest._
 info: loading extension templates/extensions/package-json-babel._
 info: Generated testoutput/package.json from template templates/package.json._
 info: Generated testoutput/README.md from template templates/README.md._
+info: loading extension templates/extensions/webpack-config._
 info: Generated testoutput/webpack.config.js from template templates/webpack.config.js._
 info: Generated testoutput/src/js/index.js from template templates/index.js._
 info: Generated testoutput/src/js/__tests__/integration.js from template templates/integration.js._
@@ -99,6 +102,7 @@ info: loading extension templates/extensions/package-json-jest._
 info: loading extension templates/extensions/package-json-babel._
 info: Generated testoutput/package.json from template templates/package.json._
 info: Generated testoutput/README.md from template templates/README.md._
+info: loading extension templates/extensions/webpack-config._
 info: Generated testoutput/webpack.config.js from template templates/webpack.config.js._
 info: Generated testoutput/src/js/index.js from template templates/index.js._
 info: Generated testoutput/src/js/__tests__/integration.js from template templates/integration.js._

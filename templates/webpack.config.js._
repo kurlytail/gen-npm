@@ -46,32 +46,11 @@ const config = {
 
     module: {
         rules: [
-            {
-                test: /\.js$/,
-                enforce: 'pre',
-                use: [
-                    'source-map-loader',
-                    {
-                        loader: 'eslint-loader',
-                        options: {
-                            emitWarning: true
-                        }
-                    }
-                ]
-            },
-            {
-                exclude: /node_modules/,
-                test: /\.js$/,
-                loader: 'babel-loader'
-            }
+<%=extension('webpack-config.*', 'module-rules').filter(v => v.trim() != '').join(',')%>
         ]
     },
 
-    resolve: {
-        extensions: ['.js']
-    },
-
-    target: 'node'
+    target: <%=extension('webpack-config.*', 'target')[0]%>
 };
 
 if (isProd) {

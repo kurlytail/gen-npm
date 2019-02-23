@@ -1,0 +1,22 @@
+<%if(labels.includes('target')) {%>
+'node'
+<%} else if(labels.includes('module-rules')) {%>
+{
+    test: /\.js$/,
+    enforce: 'pre',
+    use: [
+        'source-map-loader',
+        {
+            loader: 'eslint-loader',
+            options: {
+                emitWarning: true
+            }
+        }
+    ]
+},
+{
+    exclude: /node_modules/,
+    test: /\.js$/,
+    loader: 'babel-loader'
+}
+<%}%>
