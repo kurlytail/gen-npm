@@ -1,3 +1,4 @@
+/********* Start gen-npm templates/extensions/webpack-config._ */
 <%if(labels.includes('target')) {%>
 'node'
 <%} else if(labels.includes('module-rules')) {%>
@@ -19,4 +20,18 @@
     test: /\.js$/,
     loader: 'babel-loader'
 }
+<%} else if(labels.includes('imports')) {%>
+const CircularDependencyPlugin = require('circular-dependency-plugin');
+const UglifyEsPlugin = require('uglify-es-webpack-plugin');
+<%} else if(labels.includes('plugins')) {%>
+        new CircularDependencyPlugin({
+            exclude: /node_modules/,
+            failOnError: false
+        }),
+        new webpack.DefinePlugin({
+            'process.env': {
+                NODE_ENV: JSON.stringify(isProd ? 'production' : 'development')
+            }
+        })
 <%}%>
+/********* End gen-npm templates/extensions/webpack-config._ */

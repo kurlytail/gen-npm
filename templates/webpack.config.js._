@@ -4,8 +4,8 @@ const fs = require('fs');
 const path = require('path');
 const webpack = require('webpack');
 const chalk = require('chalk');
-const CircularDependencyPlugin = require('circular-dependency-plugin');
-const UglifyEsPlugin = require('uglify-es-webpack-plugin');
+<%=extension('webpack-config.*', 'imports').filter(v => v.trim() != '')%>
+
 
 const isProd = process.env.NODE_ENV === 'production';
 const isDebug = process.env.NODE_ENV === 'debug';
@@ -33,15 +33,7 @@ const config = {
     },
 
     plugins: [
-        new CircularDependencyPlugin({
-            exclude: /node_modules/,
-            failOnError: false
-        }),
-        new webpack.DefinePlugin({
-            'process.env': {
-                NODE_ENV: JSON.stringify(isProd ? 'production' : 'development')
-            }
-        })
+<%=extension('webpack-config.*', 'plugins').filter(v => v.trim() != '').join(',')%>
     ],
 
     module: {
