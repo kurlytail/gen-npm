@@ -1,4 +1,3 @@
-/********* Start gen-npm templates/extensions/webpack-config-1._ <%=labels.join(',')%> */
 <%if(labels.includes('module-rules')) {%>
 {
     test: /\.js$/,
@@ -21,4 +20,3 @@ const CircularDependencyPlugin = require('circular-dependency-plugin');
             failOnError: false
         })
 <%}%>
-/********* End gen-npm templates/extensions/webpack-config-1._ <%=labels.join(',')%> */

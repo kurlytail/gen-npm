@@ -1,4 +1,3 @@
-/********* Start gen-npm templates/extensions/webpack-config._ <%=labels.join(',')%> */
 <%if(labels.includes('target')) {%>
 'node'
 <%} else if(labels.includes('module-rules')) {%>
@@ -16,4 +15,3 @@ const UglifyEsPlugin = require('uglify-es-webpack-plugin');
             }
         })
 <%}%>
-/********* End gen-npm templates/extensions/webpack-config._ <%=labels.join(',')%> */
