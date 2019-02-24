@@ -1,0 +1,9 @@
+{
+    "presets": [
+<%=extension('babelrc.*', 'presets').filter(v => v.trim() != '').join('\n,')%>
+    ],
+    "plugins": [
+        "transform-class-properties",
+        "transform-object-rest-spread"
+    ]
+}

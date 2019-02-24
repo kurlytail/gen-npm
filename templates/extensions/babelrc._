@@ -1,0 +1,7 @@
+<%if(labels.includes('presets')) {%>
+        ["env", {
+          "targets": {
+            "node": "current"
+          }
+        }]
+<%}%>

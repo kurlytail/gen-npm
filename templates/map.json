@@ -5,6 +5,9 @@
     ".eslintignore": {
         "template": ".eslintignore._"
     },
+    ".babelrc": {
+        "template": ".babelrc._"
+    },
     ".eslintrc.js": {
         "template": ".eslintrc.js._"
     },

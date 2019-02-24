@@ -5,6 +5,8 @@ exports[`# integration test ## should generate design 1`] = `
 info: Initializing git repository testoutput/.git
 info: Generated testoutput/.editorconfig from template templates/.editorconfig._
 info: Generated testoutput/.eslintignore from template templates/.eslintignore._
+info: loading extension templates/extensions/babelrc._
+info: Generated testoutput/.babelrc from template templates/.babelrc._
 info: Generated testoutput/.eslintrc.js from template templates/.eslintrc.js._
 info: Generated testoutput/.gitignore from template templates/.gitignore._
 info: Generated testoutput/.npmignore from template templates/.npmignore._
@@ -34,6 +36,8 @@ exports[`# integration test ## should generate design and run npm commands 1`] =
 info: Initializing git repository testoutput/.git
 info: Generated testoutput/.editorconfig from template templates/.editorconfig._
 info: Generated testoutput/.eslintignore from template templates/.eslintignore._
+info: loading extension templates/extensions/babelrc._
+info: Generated testoutput/.babelrc from template templates/.babelrc._
 info: Generated testoutput/.eslintrc.js from template templates/.eslintrc.js._
 info: Generated testoutput/.gitignore from template templates/.gitignore._
 info: Generated testoutput/.npmignore from template templates/.npmignore._
@@ -63,6 +67,8 @@ exports[`# integration test ## should generate design with merge 1`] = `
 info: Initializing git repository testoutput/.git
 info: Generated testoutput/.editorconfig from template templates/.editorconfig._
 info: Generated testoutput/.eslintignore from template templates/.eslintignore._
+info: loading extension templates/extensions/babelrc._
+info: Generated testoutput/.babelrc from template templates/.babelrc._
 info: Generated testoutput/.eslintrc.js from template templates/.eslintrc.js._
 info: Generated testoutput/.gitignore from template templates/.gitignore._
 info: Generated testoutput/.npmignore from template templates/.npmignore._
@@ -95,6 +101,8 @@ info: Attempting to use branch master-sgen-generated
 warn: Checkout branch master-sgen-generated
 info: Generated testoutput/.editorconfig from template templates/.editorconfig._
 info: Generated testoutput/.eslintignore from template templates/.eslintignore._
+info: loading extension templates/extensions/babelrc._
+info: Generated testoutput/.babelrc from template templates/.babelrc._
 info: Generated testoutput/.eslintrc.js from template templates/.eslintrc.js._
 info: Generated testoutput/.gitignore from template templates/.gitignore._
 info: Generated testoutput/.npmignore from template templates/.npmignore._
