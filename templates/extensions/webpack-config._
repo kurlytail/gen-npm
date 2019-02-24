@@ -31,9 +31,18 @@ new webpack.DefinePlugin({
 }
 <%} else if(labels.includes('devtool')) {%>
 'inline-source-map'
+<%} else if(labels.includes('resolve-extensions')) {%>
+'.js'
+<%} else if(labels.includes('resolve-modules')) {%>
+'node_modules',
+'src'
 <%} else if(labels.includes('resolve')) {%>
 {
-    extensions: ['.js'],
-    modules: ['node_modules', 'src']
+    extensions: [
+        <%=extension('webpack-config.*', 'resolve-extensions').filter(v => v.trim() != '').join('\n,')%>
+    ],
+    modules: [
+        <%=extension('webpack-config.*', 'resolve-modules').filter(v => v.trim() != '').join('\n,')%>
+    ]
 }
 <%}%>
