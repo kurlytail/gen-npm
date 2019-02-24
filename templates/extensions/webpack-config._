@@ -8,10 +8,32 @@
 }
 <%} else if(labels.includes('imports')) {%>
 const UglifyEsPlugin = require('uglify-es-webpack-plugin');
+const fs = require('fs');
+const path = require('path');
+const webpack = require('webpack');
+const chalk = require('chalk');
 <%} else if(labels.includes('plugins')) {%>
-        new webpack.DefinePlugin({
-            'process.env': {
-                NODE_ENV: JSON.stringify(isProd ? 'production' : 'development')
-            }
-        })
+new webpack.DefinePlugin({
+    'process.env': {
+        NODE_ENV: JSON.stringify(isProd ? 'production' : 'development')
+    }
+})
+<%} else if(labels.includes('entry')) {%>
+{
+    app: './src/js/index.js'
+}
+<%} else if(labels.includes('output')) {%>
+{
+    filename: `[name]${isDist}.js`,
+    path: distPath,
+    pathinfo: !isProd,
+    libraryTarget: 'var'
+}
+<%} else if(labels.includes('devtool')) {%>
+'inline-source-map'
+<%} else if(labels.includes('resolve')) {%>
+{
+    extensions: ['.js'],
+    modules: ['node_modules', 'src']
+}
 <%}%>

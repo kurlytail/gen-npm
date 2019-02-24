@@ -1,10 +1,7 @@
 /* eslint-disable no-console */
 
-const fs = require('fs');
-const path = require('path');
-const webpack = require('webpack');
-const chalk = require('chalk');
-<%=extension('webpack-config.*', 'imports').filter(v => v.trim() != '').join('\n')%>
+
+<%=_.union(extension('webpack-config.*', 'imports').filter(v => v.trim() != '')).join('\n')%>
 
 
 const isProd = process.env.NODE_ENV === 'production';
@@ -14,23 +11,11 @@ const distPath = path.join(__dirname, 'dist');
 const showConfigOnly = '1' === process.env.SHOW_CONFIG_ONLY || 'true' === process.env.SHOW_CONFIG_ONLY;
 
 const config = {
-    entry: {
-        app: './src/js/index.js'
-    },
 
-    output: {
-        filename: `[name]${isDist}.js`,
-        path: distPath,
-        pathinfo: !isProd,
-        libraryTarget: 'var'
-    },
-
-    devtool: 'inline-source-map',
-
-    resolve: {
-        extensions: ['.js'],
-        modules: ['node_modules', 'src']
-    },
+    entry: <%=extension('webpack-config.*', 'entry').filter(v => v.trim() != '')[0] || {}%>,
+    output: <%=extension('webpack-config.*', 'output').filter(v => v.trim() != '')[0] || {}%>,
+    devtool: <%=extension('webpack-config.*', 'devtool').filter(v => v.trim() != '')[0] || {}%>,
+    resolve: <%=extension('webpack-config.*', 'resolve').filter(v => v.trim() != '')[0] || {}%>,
 
     plugins: [
 <%=extension('webpack-config.*', 'plugins').filter(v => v.trim() != '').join('\n,')%>
@@ -42,7 +27,7 @@ const config = {
         ]
     },
 
-    target: <%=extension('webpack-config.*', 'target').filter(v => v.trim() != '')[0]%>
+    target: <%=extension('webpack-config.*', 'target').filter(v => v.trim() != '')[0] || 'node'%>
 };
 
 if (isProd) {
