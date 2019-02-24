@@ -42,7 +42,7 @@ const config = {
         ]
     },
 
-    target: <%=extension('webpack-config.*', 'target')[0]%>
+    target: <%=extension('webpack-config.*', 'target').filter(v => v.trim() != '')[0]%>
 };
 
 if (isProd) {
