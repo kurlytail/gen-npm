@@ -7,6 +7,7 @@ info: Generated testoutput/.editorconfig from template templates/.editorconfig._
 info: Generated testoutput/.eslintignore from template templates/.eslintignore._
 info: loading extension templates/extensions/babelrc._
 info: Generated testoutput/.babelrc from template templates/.babelrc._
+info: loading extension templates/extensions/eslintrc-js._
 info: Generated testoutput/.eslintrc.js from template templates/.eslintrc.js._
 info: Generated testoutput/.gitignore from template templates/.gitignore._
 info: Generated testoutput/.npmignore from template templates/.npmignore._
@@ -38,6 +39,7 @@ info: Generated testoutput/.editorconfig from template templates/.editorconfig._
 info: Generated testoutput/.eslintignore from template templates/.eslintignore._
 info: loading extension templates/extensions/babelrc._
 info: Generated testoutput/.babelrc from template templates/.babelrc._
+info: loading extension templates/extensions/eslintrc-js._
 info: Generated testoutput/.eslintrc.js from template templates/.eslintrc.js._
 info: Generated testoutput/.gitignore from template templates/.gitignore._
 info: Generated testoutput/.npmignore from template templates/.npmignore._
@@ -69,6 +71,7 @@ info: Generated testoutput/.editorconfig from template templates/.editorconfig._
 info: Generated testoutput/.eslintignore from template templates/.eslintignore._
 info: loading extension templates/extensions/babelrc._
 info: Generated testoutput/.babelrc from template templates/.babelrc._
+info: loading extension templates/extensions/eslintrc-js._
 info: Generated testoutput/.eslintrc.js from template templates/.eslintrc.js._
 info: Generated testoutput/.gitignore from template templates/.gitignore._
 info: Generated testoutput/.npmignore from template templates/.npmignore._
@@ -103,6 +106,7 @@ info: Generated testoutput/.editorconfig from template templates/.editorconfig._
 info: Generated testoutput/.eslintignore from template templates/.eslintignore._
 info: loading extension templates/extensions/babelrc._
 info: Generated testoutput/.babelrc from template templates/.babelrc._
+info: loading extension templates/extensions/eslintrc-js._
 info: Generated testoutput/.eslintrc.js from template templates/.eslintrc.js._
 info: Generated testoutput/.gitignore from template templates/.gitignore._
 info: Generated testoutput/.npmignore from template templates/.npmignore._

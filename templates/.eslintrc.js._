@@ -1,6 +1,10 @@
 module.exports = {
-    extends: ['eslint:recommended', 'plugin:jest/recommended', 'prettier'],
-    plugins: ['babel', 'jest'],
+    extends: [
+<%=_.union(extension('eslintrc-js.*', 'extends').filter(v => v.trim() != '')).join('\n,')%>
+    ],
+    plugins: [
+<%=_.union(extension('eslintrc-js.*', 'plugins').filter(v => v.trim() != '')).join('\n,')%>
+    ],
     parser: 'babel-eslint',
     env: {
         browser: true,
@@ -22,16 +26,12 @@ module.exports = {
         'generator-star-spacing': ['error', { before: true, after: false }]
     },
     parserOptions: {
-        sourceType: 'module',
-        ecmaVersion: 6
+<%=_.union(extension('eslintrc-js.*', 'parserOptions').filter(v => v.trim() != '')).join('\n,')%>
     },
-    globals: { React: true },
+    globals: {
+<%=_.union(extension('eslintrc-js.*', 'globals').filter(v => v.trim() != '')).join('\n,')%>
+    },
     settings: {
-        propWrapperFunctions: ['forbidExtraProps'],
-        'import/resolver': {
-            'babel-module': {
-                extensions: ['.js']
-            }
-        }
+<%=_.union(extension('eslintrc-js.*', 'settings').filter(v => v.trim() != '')).join('\n,')%>
     }
 };
