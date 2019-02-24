@@ -7,13 +7,7 @@
 <%=extension('package-json-.*', 'devDependencies').filter(v => v.trim() != '').join(',')%>
     },
     "scripts": {
-        "docs": "jsdoc -c jsdoc.json && npx opn-cli ./docs/index.html",
-        "build": "NODE_ENV=\"debug\" webpack --display-modules --display-reasons",
-        "lint": "eslint src",
-        "test": "jest tests",
-        "test:watch": "jest --watch tests",
-        "test:ci": "jest --ci tests",
-        "clean": "rimraf ./docs ./dist ./coverage test-report.xml"
+<%=extension('package-json-.*', 'scripts').filter(v => v.trim() != '').join(',')%>
     },
     "license": "UNLICENSED",
     "dependencies": {
