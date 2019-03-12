@@ -14,16 +14,7 @@ module.exports = {
         jest: true
     },
     rules: {
-        'comma-dangle': ['error', 'never'],
-        indent: ['error', 4, { SwitchCase: 1 }],
-        'no-nested-ternary': ['error'],
-        'linebreak-style': ['error', 'unix'],
-        'no-unused-vars': ['warn'],
-        'no-console': 2,
-        'no-redeclare': 'warn',
-        quotes: ['error', 'single', { avoidEscape: true }],
-        semi: ['error', 'always'],
-        'generator-star-spacing': ['error', { before: true, after: false }]
+<%=_.union(extension('eslintrc-js.*', 'rules').filter(v => v.trim() != '')).join('\n,')%>
     },
     parserOptions: {
 <%=_.union(extension('eslintrc-js.*', 'parserOptions').filter(v => v.trim() != '')).join('\n,')%>

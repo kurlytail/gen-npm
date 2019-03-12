@@ -23,6 +23,7 @@ info: loading extension templates/extensions/webpack-config-1._
 info: Generated testoutput/webpack.config.js from template templates/webpack.config.js._
 info: Generated testoutput/src/js/index.js from template templates/index.js._
 info: Generated testoutput/src/js/__tests__/integration.js from template templates/integration.js._
+info: Generated testoutput/.flowconfig from template templates/.flowconfig._
 info: Committed generated files
 info: Attempting to use branch master-sgen-generated
 info: Creating new branch master-sgen-generated
@@ -55,6 +56,7 @@ info: loading extension templates/extensions/webpack-config-1._
 info: Generated testoutput/webpack.config.js from template templates/webpack.config.js._
 info: Generated testoutput/src/js/index.js from template templates/index.js._
 info: Generated testoutput/src/js/__tests__/integration.js from template templates/integration.js._
+info: Generated testoutput/.flowconfig from template templates/.flowconfig._
 info: Committed generated files
 info: Attempting to use branch master-sgen-generated
 info: Creating new branch master-sgen-generated
@@ -87,6 +89,7 @@ info: loading extension templates/extensions/webpack-config-1._
 info: Generated testoutput/webpack.config.js from template templates/webpack.config.js._
 info: Generated testoutput/src/js/index.js from template templates/index.js._
 info: Generated testoutput/src/js/__tests__/integration.js from template templates/integration.js._
+info: Generated testoutput/.flowconfig from template templates/.flowconfig._
 info: Committed generated files
 info: Attempting to use branch master-sgen-generated
 info: Creating new branch master-sgen-generated
@@ -122,6 +125,7 @@ info: loading extension templates/extensions/webpack-config-1._
 info: Generated testoutput/webpack.config.js from template templates/webpack.config.js._
 info: Generated testoutput/src/js/index.js from template templates/index.js._
 info: Generated testoutput/src/js/__tests__/integration.js from template templates/integration.js._
+info: Generated testoutput/.flowconfig from template templates/.flowconfig._
 warn: Checkout branch master-sgen-generated
 warn: Checkout branch master-sgen-generated
 warn: Nothing changed in generated files

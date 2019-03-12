@@ -37,5 +37,8 @@
     },
     "src/js/__tests__/integration.js": {
         "template": "integration.js._"
+    },
+    ".flowconfig": {
+        "template": ".flowconfig._"
     }
 }
