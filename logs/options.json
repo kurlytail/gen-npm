@@ -5,7 +5,7 @@
         "node_modules/@kurlytail/gen-log/templates/map.json"
     ],
     "extension": [],
-    "generator": [],
+    "generator": ["sgen", "log"],
     "g": ["sgen", "log"],
     "d": ["design.json"]
 }
