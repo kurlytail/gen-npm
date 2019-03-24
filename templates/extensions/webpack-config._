@@ -7,7 +7,7 @@
     loader: 'babel-loader'
 }
 <%} else if(labels.includes('imports')) {%>
-const UglifyEsPlugin = require('uglify-es-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const fs = require('fs');
 const path = require('path');
 const webpack = require('webpack');
@@ -45,4 +45,6 @@ new webpack.DefinePlugin({
         <%=extension('webpack-config.*', 'resolve-modules').filter(v => v.trim() != '').join('\n,')%>
     ]
 }
+<%} else if(labels.includes('optimization')) {%>
+    minimizer: [new UglifyJsPlugin()],
 <%}%>

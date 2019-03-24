@@ -16,7 +16,9 @@ const config = {
     output: <%=extension('webpack-config.*', 'output').filter(v => v.trim() != '')[0] || {}%>,
     devtool: <%=extension('webpack-config.*', 'devtool').filter(v => v.trim() != '')[0] || {}%>,
     resolve: <%=extension('webpack-config.*', 'resolve').filter(v => v.trim() != '')[0] || {}%>,
-
+    optimization: {
+<%=extension('webpack-config.*', 'optimization').filter(v => v.trim() != '').join('\n,')%>
+    },
     plugins: [
 <%=extension('webpack-config.*', 'plugins').filter(v => v.trim() != '').join('\n,')%>
     ],
@@ -29,15 +31,6 @@ const config = {
 
     target: <%=extension('webpack-config.*', 'target').filter(v => v.trim() != '')[0] || 'node'%>
 };
-
-if (isProd) {
-    config.plugins.push(
-        new UglifyEsPlugin({
-            mangle: true,
-            compress: true
-        })
-    );
-}
 
 // If ran with SHOW_CONFIG_ONLY=1|true, only show the config and exit cleanly
 if (showConfigOnly) {

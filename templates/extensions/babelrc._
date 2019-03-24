@@ -1,8 +1,12 @@
 <%if(labels.includes('presets')) {%>
-        ["env", {
-          "targets": {
+[
+    "@babel/preset-env",
+    {
+        "targets": {
             "node": "current"
-          }
-        }],
-        "flow"
+        }
+    }
+],
+"@babel/preset-flow"
+
 <%}%>
