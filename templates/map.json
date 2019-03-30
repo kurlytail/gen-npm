@@ -33,7 +33,7 @@
         "template": "webpack.config.js._"
     },
     "src/js/index.js": {
-        "template": "index.js._"
+        "template": "src/js/index.js._"
     },
     "src/js/__tests__/integration.js": {
         "template": "integration.js._"
