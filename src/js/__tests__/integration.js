@@ -16,8 +16,8 @@ describe('# integration test', () => {
         output = execSync('sgen -g `pwd`/dist/npm.min.js -d src/test/fixture/design.json -o testoutput').toString();
         output = output.replace(/info: Loaded generator .*npm.min.js.*/, '');
         expect(output).toMatchSnapshot();
-        output = execSync('npm install', { cwd: 'testoutput' }).toString();
-        output = execSync('npm run lint', { cwd: 'testoutput' }).toString();
-        output = execSync('npm run build', { cwd: 'testoutput' }).toString();
+        execSync('npm install', { cwd: 'testoutput', stdio: 'inherit' });
+        execSync('npm run lint', { cwd: 'testoutput', stdio: 'inherit' });
+        execSync('npm run build', { cwd: 'testoutput', stdio: 'inherit' });
     });
 });
