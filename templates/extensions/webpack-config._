@@ -26,7 +26,7 @@ new webpack.DefinePlugin({
 {
     filename: `[name]${isDist}.js`,
     path: distPath,
-    pathinfo: !isProd,ß
+    pathinfo: !isProd,
     libraryTarget: 'var'
 }
 <%} else if(labels.includes('devtool')) {%>
