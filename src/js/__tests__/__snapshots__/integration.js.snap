@@ -3,7 +3,12 @@
 exports[`# integration test ## should generate design and run npm commands 1`] = `
 "
 info: loading map templates/map.json
-info: Initializing git repository testoutput/.git
+info: Opening git repository testoutput/.git
+warn: Ignoring error Error: cannot stash changes - there is nothing to stash.
+info: Attempting to use branch master-sgen-generated
+info: Creating new branch master-sgen-generated
+warn: Checkout branch master
+warn: Checkout branch master-sgen-generated
 info: Generated testoutput/.editorconfig from template templates/.editorconfig._
 info: Generated testoutput/.eslintignore from template templates/.eslintignore._
 info: loading extension templates/extensions/babelrc._
@@ -25,11 +30,12 @@ info: Generated testoutput/webpack.config.js from template templates/webpack.con
 info: Generated testoutput/src/js/index.js from template templates/src/js/index.js._
 info: Generated testoutput/src/js/__tests__/integration.js from template templates/integration.js._
 info: Generated testoutput/.flowconfig from template templates/.flowconfig._
+warn: Checkout branch master-sgen-generated
 info: Committed generated files
-info: Attempting to use branch master-sgen-generated
-info: Creating new branch master-sgen-generated
 warn: Checkout branch master
-warn: Checkout branch master
+warn: Generator branch master-sgen-generated was modified
+
+
 info: sgen is done
 "
 `;
