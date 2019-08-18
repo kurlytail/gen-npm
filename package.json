@@ -1,7 +1,7 @@
 {
     "name": "@kurlytail/gen-npm",
     "description": "NPM project generator",
-    "version": "1.1.28",
+    "version": "1.1.29",
     "main": "dist/npm.min.js",
     "devDependencies": {
         "@babel/cli": "7.5.5",
