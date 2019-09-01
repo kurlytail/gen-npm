@@ -41,11 +41,23 @@
     "license": "UNLICENSED",
     "jest": {
         "testResultsProcessor": "./node_modules/jest-junit-reporter",
-        "moduleDirectories": ["node_modules", "./src/js"],
+        "moduleDirectories": [
+            "node_modules",
+            "./src/js"
+        ],
         "collectCoverage": true,
-        "coverageReporters": ["text", "html"],
-        "collectCoverageFrom": ["src/js/**/*.js", "!**/node_modules/**"],
-        "testPathIgnorePatterns": ["testoutput", ".generated"]
+        "coverageReporters": [
+            "text",
+            "html"
+        ],
+        "collectCoverageFrom": [
+            "src/js/**/*.js",
+            "!**/node_modules/**"
+        ],
+        "testPathIgnorePatterns": [
+            "testoutput",
+            ".generated"
+        ]
     },
     "scripts": {
         "docs": "jsdoc -c jsdoc.json && npx opn-cli ./docs/index.html",
@@ -58,9 +70,10 @@
         "clean": "rimraf ./docs ./dist ./coverage test-report.xml"
     },
     "dependencies": {
+        "@kurlytail/gen-bst": "1.3.41",
+        "@kurlytail/gen-lib": "1.3.7",
         "@kurlytail/gen-log": "1.3.20",
         "@kurlytail/gen-sgen": "1.3.13",
-        "@kurlytail/gen-lib": "1.3.7",
         "yaml": "1.6.0"
     }
 }
