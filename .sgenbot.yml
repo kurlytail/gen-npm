@@ -1,0 +1,6 @@
+design:
+    - design.json
+generator:
+    - sgen
+    - log
+    - bst
