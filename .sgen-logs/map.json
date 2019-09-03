@@ -66,10 +66,14 @@
         "template":
             "../../.nvm/versions/node/v10.9.0/lib/node_modules/@kurlytail/gen-bst/templates/azure-pipelines.yml._"
     },
-    "logs/map.json": {
+    ".sgen-logs/map.json": {
         "template": "../../.nvm/versions/node/v10.9.0/lib/node_modules/@kurlytail/gen-log/templates/logs/map.json._"
     },
-    "logs/options.json": {
+    ".sgen-logs/options.json": {
         "template": "../../.nvm/versions/node/v10.9.0/lib/node_modules/@kurlytail/gen-log/templates/logs/options.json._"
+    },
+    ".sgen-logs/packages.json": {
+        "template":
+            "../../.nvm/versions/node/v10.9.0/lib/node_modules/@kurlytail/gen-log/templates/logs/packages.json._"
     }
 }
