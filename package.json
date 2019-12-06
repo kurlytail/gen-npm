@@ -73,7 +73,7 @@
         "@kurlytail/gen-bst": "1.3.88",
         "@kurlytail/gen-lib": "1.3.80",
         "@kurlytail/gen-log": "1.3.96",
-        "@kurlytail/gen-sgen": "1.3.68",
+        "@kurlytail/gen-sgen": "1.3.70",
         "yaml": "1.7.2"
     }
 }
