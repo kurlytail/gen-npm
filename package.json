@@ -72,7 +72,7 @@
     "dependencies": {
         "@kurlytail/gen-bst": "1.3.95",
         "@kurlytail/gen-lib": "1.3.85",
-        "@kurlytail/gen-log": "1.3.106",
+        "@kurlytail/gen-log": "1.3.107",
         "@kurlytail/gen-sgen": "1.3.77",
         "yaml": "1.7.2"
     }
