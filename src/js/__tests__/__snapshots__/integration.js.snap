@@ -2,7 +2,7 @@
 
 exports[`# integration test ## should generate design and run npm commands 1`] = `
 "
-info: loading map templates/map.json
+info: loading map templates/map.yml
 info: Opening git repository testoutput/.git
 warn: Ignoring error Error: cannot stash changes - there is nothing to stash.
 info: Attempting to use branch master-sgen-generated
